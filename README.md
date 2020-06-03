@@ -14,4 +14,15 @@ Learn more: https://en.wikipedia.org/wiki/Tiny_Encryption_Algorithm
 - teaEncode.cpp is used to encrypt a file and teaDecode.cpp is used to decrypt it. You can of course see the implementation and change it as you see fit.
 - 2 executable windows files with the same name are provided if you want to use TEA without compilation. By default in plaintext.txt there is the initial
 plaintext. In encrypted.txt, the text after the encryption is generated and in decrypted.txt the text after decryption is generated, but you can use another filenames.
-It is asked while you run the executables.    
+It is asked while you run the executables.
+
+## Copyright and License
+
+Copyright (c) 2020 MIT Licence
+
+## Copyright claims
+
+The TEA algorithm wasn't designed by me, but by David Wheeler and Roger Needham of the Cambridge Computer Laboratory. No claim by me & those who use this project!!<br>
+I just made an implementation of the algorithm for educational purposes.
+
+**Thanks for reading**    
