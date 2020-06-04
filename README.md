@@ -5,11 +5,11 @@ You can use the algorithm to encrypt and decrypt (important) text.
 
 ## A few words about symmetric cryptography
 
-- Symmetric encryption is a type of encryption where only one (secret) key is used to both encrypt and decrypt electronic information. 
-The entities communicating via symmetric encryption must exchange the key so that it can be used in the decryption process
-- So, Symmetric cryptography encodes a message via transformations using a secret key known only to the sender and receiver. 
+- Symmetric encryption is a type of encryption where only one (secret) key is used to both encrypt and decrypt (electronic) information. 
+The entities communicating via symmetric encryption must exchange the key so that it can be used in the decryption process.
+- So, symmetric cryptography encodes a message via transformations using a secret key known only to the sender and receiver. 
 The original message can be viewed by going through reversing these transformations using the same pre-shared key. 
-The process of obfuscating the original text is called encryption, while the reverse is decryption. 
+The process of obfuscating the original text is called encryption, while the reverse process is called decryption. 
 There are many standards of the type(AES, DES e.t.c.). One of them based upon the Fiestel cipher structure is the Tiny Encryption Algorithm (TEA).
  
 ## What is TEA (Tiny Encryption Algorithm)
