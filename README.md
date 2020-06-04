@@ -3,7 +3,7 @@
 This project was made for educational purposes but can serve practical ones too. 
 You can use the algorithm to encrypt and decrypt (important) text.
 
-# A few words about symmetric cryptography
+## A few words about symmetric cryptography
 
 - Symmetric encryption is a type of encryption where only one (secret) key is used to both encrypt and decrypt electronic information. 
 The entities communicating via symmetric encryption must exchange the key so that it can be used in the decryption process
