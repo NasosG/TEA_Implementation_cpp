@@ -30,7 +30,7 @@ It is asked while you run the executables.
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2020 © <a href="http://fvcproductions.com" target="_blank">NasosG</a>.
+- Copyright 2020 © <a href="https://github.com/NasosG" target="_blank">NasosG</a>.
 
 ## Copyright claims
 
