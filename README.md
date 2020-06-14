@@ -15,7 +15,7 @@ There are many standards of the type(AES, DES e.t.c.). One of them based upon th
 ## What is TEA (Tiny Encryption Algorithm)
 
 In cryptography, the Tiny Encryption Algorithm (TEA) is a block cipher notable for its simplicity of description and implementation, 
-designed by David Wheeler and Roger Needham of the Cambridge Computer Laboratory. It is asymmetric block cipher, based upon the Fiestel cipher structure
+designed by David Wheeler and Roger Needham of the Cambridge Computer Laboratory. It is a symmetric block cipher, based upon the Fiestel cipher structure
 Learn more: https://en.wikipedia.org/wiki/Tiny_Encryption_Algorithm
 
 ## How to use
