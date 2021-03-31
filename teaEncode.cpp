@@ -19,7 +19,7 @@ void encipherTea (unsigned int* v, unsigned int* w, unsigned int* k)
     register unsigned int k0=k[0], k1=k[1], k2=k[2], k3=k[3];	// cache key
     
     for(i=0; i<32; i++) 										
-	{															// basic cycle start
+    {															// basic cycle start
     	sum += delta;
         v0 += ((v1<<4) + k0) ^ (v1 + sum) ^ ((v1>>5) + k1);
         v1 += ((v0<<4) + k2) ^ (v0 + sum) ^ ((v0>>5) + k3);
@@ -41,7 +41,7 @@ void TeaEncode (const std::string& str, const std::string& key, std::string* out
     memset ( w, 0, sizeof(w) );
     memset ( k, 0, sizeof(k) );
     memset ( keybuffer, 0, sizeof(keybuffer) );
-	//memset(out,0,sizeof(out));
+    //memset(out,0,sizeof(out));
     out->clear ();
 
     // Process the key
@@ -77,37 +77,37 @@ void TeaEncode (const std::string& str, const std::string& key, std::string* out
     delete [] strbuf;
 }
 
-int main(void)
+int main(void) 
 {
-	printf("--Tea Encryptor--\n\n");
-	// Streams
-	ifstream fileIn;
-	ofstream fileOut;
-	// Data system
-	string f1,f2,f3;
-	string *fileName = &f1; // File Name
-	string *key = &f2; // Key 
-	string *data = &f3; // Data 
-	string *name = new string;
-	// Key input
-	printf("Enter the key\n>");
-	getline(cin,*key);
-	// Name system
-	printf("Please enter the name of the file you want to open\n>");
-	getline(cin,*fileName);
-	// Input System
-    fileIn.open(*fileName, ios::in | ios::binary);
-    string str((istreambuf_iterator<char>(fileIn)), istreambuf_iterator<char>()); 
+    printf("--Tea Encryptor--\n\n");
+    // Streams
+    ifstream fileIn;
+    ofstream fileOut;
+    // Data system
+    string f1, f2, f3;
+    string * fileName = & f1; // File Name
+    string * key = & f2; // Key 
+    string * data = & f3; // Data 
+    string * name = new string;
+    // Key input
+    printf("Enter the key\n>");
+    getline(cin, * key);
+    // Name system
+    printf("Please enter the name of the file you want to open\n>");
+    getline(cin, * fileName);
+    // Input System
+    fileIn.open( * fileName, ios:: in | ios::binary);
+    string str((istreambuf_iterator < char > (fileIn)), istreambuf_iterator < char > ());
     fileIn.close();
-	printf("File Was Loaded!\n");
-	// Tea System
-	string outdata;
-	TeaEncode(str, f2, &outdata);
-	str = "0";
-	// Write Data
-	printf("Please enter the name of the output file\n>");
-	getline(cin,*fileName);
-	fileOut.open(*fileName, ios::out | ios::binary);
+    printf("File Was Loaded!\n");
+    // Tea System
+    string outdata;
+    TeaEncode(str, f2, & outdata);
+    str = "0";
+    // Write Data
+    printf("Please enter the name of the output file\n>");
+    getline(cin, * fileName);
+    fileOut.open( * fileName, ios::out | ios::binary);
     fileOut.write(outdata.c_str(), outdata.size());
-	printf("Done! Encryption Successful!\n");
+    printf("Done! Encryption Successful!\n");
 }
